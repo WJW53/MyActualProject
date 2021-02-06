@@ -5,15 +5,9 @@ vue add ant-design
 ```npm run lint```可以自动修复代码格式
 `@import url("~@/assets/css/home.less");`加个`~`才会把后面的当作模块路径解析,才能让@代表src奏效
 
-
-- appkey： wjw_1612323848700# mall-admin-app
-```shell
-vue add ant-design
-```
-```npm run lint```可以自动修复代码格式
-`@import url("~@/assets/css/home.less");`加个`~`才会把后面的当作模块路径解析,才能让@代表src奏效
-
 - appkey： wjw_1612323848700
+
+
 ## Project setup
 ```
 npm install

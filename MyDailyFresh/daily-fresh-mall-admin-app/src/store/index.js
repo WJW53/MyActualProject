@@ -16,6 +16,7 @@ export default new Vuex.Store({
     //   role: '',
     // }
     user: getUserCookie(),
+    menuRoutes: [],//存储菜单的路由
   },
   mutations: {
     changeCollapsed(state) {
@@ -32,6 +33,9 @@ export default new Vuex.Store({
         appkey: '',
         role: '',
       }
+    },
+    changeMenuRoutes(state, routes) {
+      state.menuRoutes = routes;
     }
   },
   actions: {
@@ -46,6 +50,9 @@ export default new Vuex.Store({
       // console.log('logout');
       commit('logout');
       removeUserCookie();
+    },
+    changeMenuRoutes({ commit }, routes) {
+      commit('changeMenuRoutes', routes);
     }
   },
   modules: {
