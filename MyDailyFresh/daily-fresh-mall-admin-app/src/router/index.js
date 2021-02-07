@@ -15,6 +15,8 @@ const asyncRouterMap = [
     name: 'Product',
     meta: {
       title: '商品',
+      icon: 'inbox',
+      hidden: false,
     },
     component: Home,
     children: [
@@ -22,25 +24,30 @@ const asyncRouterMap = [
         path: 'list',
         name: 'ProductList',
         meta: {
-          title: '商品列表'
+          title: '商品列表',
+          icon: 'unordered-list',
+          hidden: false,
         },
         component: () => import("../views/page/ProductList"),
-        children: [//只是为了测试更深的目录而已
-          {
-            path: 'whatever',
-            name: 'Whatever',
-            meta: {
-              title: '随便吧'
-            },
-            component: () => import("../views/page/ProductAdd"),
-          },
-        ]
+        // children: [//只是为了测试更深的目录而已
+        //   {
+        //     path: 'whatever',
+        //     name: 'Whatever',
+        //     meta: {
+        //       title: '随便吧',
+        //       hidden: false,
+        //     },
+        //     component: () => import("../views/page/ProductAdd"),
+        //   },
+        // ]
       },
       {
         path: 'add',
         name: 'ProductAdd',
         meta: {
-          title: '添加商品'
+          title: '添加商品',
+          icon: 'file-add',
+          hidden: false,
         },
         component: () => import("../views/page/ProductAdd"),
       },
@@ -48,7 +55,9 @@ const asyncRouterMap = [
         path: 'category',
         name: 'Category',
         meta: {
-          title: '类目管理'
+          title: '类目管理',
+          icon: 'project',
+          hidden: false,
         },
         component: () => import("../views/page/Category"),
       }
@@ -72,14 +81,18 @@ const routes = [
     // redirect: '/home/index',
     component: Home,
     meta: {
-      title: "首页"
+      title: "首页",
+      icon: 'home',
+      hidden: false,
     },
     children: [
       {
         path: 'index',
         name: "Index",
-        meta:{
-          title:'统计',
+        meta: {
+          title: '统计',
+          icon: 'number',
+          hidden: false,
         },
         component: () => import("../views/page/Index.vue"),
       },
@@ -88,8 +101,9 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    meta:{
-      title:'登录'
+    meta: {
+      title: '登录',
+      hidden: true,
     },
     component: Login
   },
@@ -110,9 +124,13 @@ router.beforeEach(function (to, from, next) {
         //控制当前用户可以有哪些路由权限,比如商品那里,他能看到哪些按钮页面
         const menuRoutes = getMenuRoutes(store.state.user.role, asyncRouterMap);
         // console.log(menuRoutes);
-        router.addRoutes([...menuRoutes]);//动态添加更多的路由规则,参数必须是一个符合 routes 选项要求的数组
+
+        //注意：addRoutes和dispatch都是异步的,但是我们必须等他们执行完才能next();
         //修改状态数据
-        store.dispatch('changeMenuRoutes',routes.concat(menuRoutes));
+        store.dispatch('changeMenuRoutes', routes.concat(menuRoutes)).then(() => {
+          router.addRoutes([...menuRoutes]);//动态添加更多的路由规则,参数必须是一个符合 routes 选项要求的数组
+          next();
+        });
         isAddRoutes = !isAddRoutes;
       }
 

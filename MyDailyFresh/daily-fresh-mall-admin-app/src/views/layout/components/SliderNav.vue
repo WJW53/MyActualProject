@@ -11,7 +11,11 @@
     <div class="breadcrumb">
       <a-breadcrumb>
         <a-breadcrumb-item>首页</a-breadcrumb-item>
-        <a-breadcrumb-item><a href="">统计</a></a-breadcrumb-item>
+        <a-breadcrumb-item
+          ><a href="javascript:void(0);">{{
+            $route.meta.title
+          }}</a></a-breadcrumb-item
+        >
       </a-breadcrumb>
     </div>
     <ul class="user-info">
@@ -33,8 +37,8 @@ export default {
     handleLogout() {
       this.$store.dispatch("logout");
       this.$router.push({
-        name:'Login'
-      });//退出后默认回到login页面
+        name: "Login",
+      }); //退出后默认回到login页面
     },
   },
   mounted() {},
