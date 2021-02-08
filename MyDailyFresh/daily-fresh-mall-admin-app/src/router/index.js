@@ -13,6 +13,7 @@ const asyncRouterMap = [
   {
     path: '/product',
     name: 'Product',
+    redirect:'/product/list',
     meta: {
       title: '商品',
       icon: 'inbox',
@@ -78,7 +79,7 @@ const routes = [
     path: '/',
     // path: '/home',
     name: 'Home',
-    // redirect: '/home/index',
+    redirect: '/index',
     component: Home,
     meta: {
       title: "首页",

@@ -2,6 +2,8 @@
 
 > **初始化的时候，只挂载不需要权限路由，如登陆，注册等页面路由，然后等用户登录之后，后端返回当前用户的权限表，前端根据这个权限表遍历前端路由表，动态生成用户权限路由，然后使用vue-router提供的addRoutes,将权限路由表动态添加到路由实例中**
 
+统一配置axios,拦截请求,过滤、判断
+
 ## 登录/注册页面
 
 放在一个单独的路由中login.vue
@@ -55,3 +57,18 @@ router.addRoutes(routes);
 - 3. 动态添加导航栏时，addRoutes不生效解决的两种方案
     1、在addroutes前，使用router.options.routes=XXXXX的方法手动添加
     2、我用的是，在store的state里里维护一个routes数组，然后使用这个数组遍历生成侧面导航栏
+
+
+## 引入v-charts
+
+做统计页面的图表
+
+坑 echarts也要降级才能运行,最新的是5.xx,
+vue3.0才是适配了v-echart5.0+
+vue2.x要用echarts4.xxx
+
+```js
+"echarts": "^4.0.2",
+"v-charts": "^1.19.0",
+```
+

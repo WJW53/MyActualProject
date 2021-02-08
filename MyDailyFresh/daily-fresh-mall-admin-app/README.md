@@ -156,7 +156,7 @@ method: get
 | page       | Number |  非必须  | 获取产品的页码                     |
 | size       | Number |  非必须  | 获取产品每一页的条数               |
 | searchWord | String |  非必须  | 检索产品的关键词                   |
-| category   | Number | 非必须   | 检索产品的类目|
+| category   | Number | 非必须   | 检索产品的类目                       |
 
 响应数据：
 | 字段 | 类型 | 是否必须 | 备注 |

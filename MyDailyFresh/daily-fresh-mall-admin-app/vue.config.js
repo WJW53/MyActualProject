@@ -1,5 +1,5 @@
 module.exports = {
-    lintOnSave: false,
+    lintOnSave: false,//不要eslint检查,烦人
     devServer: {
         open: true,
     },

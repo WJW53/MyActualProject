@@ -10,12 +10,14 @@
 
     <div class="breadcrumb">
       <a-breadcrumb>
-        <a-breadcrumb-item>首页</a-breadcrumb-item>
-        <a-breadcrumb-item
-          ><a href="javascript:void(0);">{{
-            $route.meta.title
-          }}</a></a-breadcrumb-item
-        >
+        <a-breadcrumb-item>
+          {{ $route.matched[0].meta.title }}
+        </a-breadcrumb-item>
+        <a-breadcrumb-item>
+          <router-link :to="{ name: $route.name }">
+            {{ $route.meta.title }}
+          </router-link>
+        </a-breadcrumb-item>
       </a-breadcrumb>
     </div>
     <ul class="user-info">
@@ -28,7 +30,17 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      // curRouteMatched: this.$route.matched,
+    };
+  },
+  watch: {
+    $route() {//本来是想在这里将data中的属性curRouteMatched更新,然后使得模板中的数据更新的
+    //但是后来发现我那么写好像用不到这样
+    //   console.log("监听到变化了");
+    //   console.log(this.$route);
+    //  this.curRouteMatched = this.$route.matched;
+    },
   },
   methods: {
     toggleCollapsed() {
