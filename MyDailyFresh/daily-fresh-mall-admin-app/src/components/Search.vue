@@ -38,8 +38,8 @@
         <a-button
           type="primary"
           html-type="submit"
-          :disabled="searchForm.searchWord === '' || searchForm.catagory === ''"
         >
+          <!-- :disabled="searchForm.searchWord === '' || searchForm.catagory === ''" -->
           搜索
         </a-button>
       </a-form-model-item>
@@ -47,7 +47,6 @@
   </div>
 </template>
 <script>
-import api from "@/api/category";
 export default {
   data() {
     return {
@@ -55,14 +54,10 @@ export default {
         searchWord: "",
         category: "",
       },
-      categoryList: [],
     };
   },
+  props:['categoryList'],
   created() {
-    api.list(this.searchForm).then((res) => {
-      //   console.log(res);
-      this.categoryList = res.data;
-    });
   },
   methods: {
     //提交表单时触发的函数
@@ -72,7 +67,7 @@ export default {
     },
     //切换类目时触发的函数
     handleChange(value) {
-    //   console.log(`selected ${value}`);
+      // console.log(`selected ${value}`);
       this.searchForm.category = value;
     },
   },
