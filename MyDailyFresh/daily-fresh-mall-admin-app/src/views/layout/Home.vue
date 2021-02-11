@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <left-menu></left-menu>
+    <left-menu :key="key"></left-menu>
     <div :class="{ 'main-app': true, 'menu-fold': $store.state.collapsed }">
       <slider-nav></slider-nav>
       <!-- 根据路由动态展示主要内容区的数据 -->
@@ -19,12 +19,16 @@ export default {
   },
   data() {
     return {
-
+      key: new Date().getTime(),//这是为了重新刷新路由组件的
     };
   },
   methods: {},
+  watch: {
+    $route() {
+      this.key = new Date().getTime();
+    },
+  },
 };
-
 </script>
 
 <style lang="less">

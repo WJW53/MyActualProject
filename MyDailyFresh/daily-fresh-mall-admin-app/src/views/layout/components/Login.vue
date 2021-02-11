@@ -73,12 +73,24 @@ export default {
           api
             .login(this.loginForm)
             .then((res) => {
-              console.log(res);
-              this.$store.dispatch("setUserInfo",res);//成功之后改变状态数据,写在前面
-              this.$router.push({
-                //成功之后就路由跳转
-                name: "Home",
-              });
+              // console.log(res);
+              this.$store.dispatch("setUserInfo", res).then(() => {
+                // console.log("setUserInfo");
+                // //就是要先存储完毕数据才能再push路由
+                this.$router
+                  .push({
+                    //成功之后就路由跳转
+                    name: "Home",
+                  })
+                  .then(
+                    () => {
+                      // console.log("last output");
+                    },
+                    (err) => {
+                      console.log(err);
+                    }
+                  );
+              }); //成功之后改变状态数据,写在前面,但是注意,它是异步的
             })
             .catch((error) => {
               //$message.error是vue提供的一个错误弹窗

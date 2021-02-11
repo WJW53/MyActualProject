@@ -22,7 +22,7 @@
     </div>
     <ul class="user-info">
       <li>{{ $store.state.user.username }} <a-icon type="down" /></li>
-      <li @click="handleLogout">退出</li>
+      <li @click="handleLogout" class="logout">退出</li>
     </ul>
   </div>
 </template>
@@ -56,3 +56,12 @@ export default {
   mounted() {},
 };
 </script>
+
+<style lang="less">
+.user-info{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+</style>

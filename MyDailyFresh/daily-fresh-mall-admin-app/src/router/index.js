@@ -1,19 +1,27 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/layout/Home.vue';
-import Login from '../views/layout/components/Login.vue';
 import store from '@/store';
 import getMenuRoutes from '@/utils/permission';
+import Home from '../views/layout/Home.vue';
+import Login from '../views/layout/components/Login.vue';
 
 
 Vue.use(VueRouter);
+
+const originalPush = VueRouter.prototype.push;//解决一类错误
+//Redirected when going from "/login" to "/index" via a navigation guard.
+VueRouter.prototype.push = function push(location, onResolve, onReject) {
+  if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject);
+  return originalPush.call(this, location).catch(err => err);
+}
+
 
 //商品的路由取决于用户的角色,先统一配置到这里来
 const asyncRouterMap = [
   {
     path: '/product',
     name: 'Product',
-    redirect:'/product/list',
+    redirect: '/product/list',
     meta: {
       title: '商品',
       icon: 'inbox',
@@ -53,6 +61,16 @@ const asyncRouterMap = [
         component: () => import("../views/page/ProductAdd"),
       },
       {
+        path: 'edit/:id',//为了确定当前要编辑哪个产品的id
+        name: 'ProductEdit',
+        meta: {
+          title: '编辑商品',
+          icon: 'file-add',
+          hidden: true,
+        },
+        component: () => import("../views/page/ProductAdd.vue"),
+      },
+      {
         path: 'category',
         name: 'Category',
         meta: {
@@ -79,8 +97,8 @@ const routes = [
     path: '/',
     // path: '/home',
     name: 'Home',
-    redirect: '/index',
     component: Home,
+    redirect: '/index',
     meta: {
       title: "首页",
       icon: 'home',
@@ -114,33 +132,37 @@ const router = new VueRouter({
   routes,
 });
 
-
 let isAddRoutes = false;
-router.beforeEach(function (to, from, next) {
+router.beforeEach(async (to, from, next) => {
+  // console.log(to, from);
   //登陆状态校验
   if (to.path !== '/login') {
     //如果cookie存在的话,可以直接跳转
-    if (store.state.user.appkey && store.state.user.username && store.state.user.role && store.state.user.email) {
+    if (store.state.user.appkey && store.state.user.username
+      && store.state.user.role && store.state.user.email) {
       if (!isAddRoutes) {//避免总在重复添加
         //控制当前用户可以有哪些路由权限,比如商品那里,他能看到哪些按钮页面
         const menuRoutes = getMenuRoutes(store.state.user.role, asyncRouterMap);
-        // console.log(menuRoutes);
-
-        //注意：addRoutes和dispatch都是异步的,但是我们必须等他们执行完才能next();
+        //注意：dispatch都是异步的,但是我们必须等他们执行完才能next();
         //修改状态数据
+        // console.log(routes,menuRoutes);
         store.dispatch('changeMenuRoutes', routes.concat(menuRoutes)).then(() => {
-          router.addRoutes([...menuRoutes]);//动态添加更多的路由规则,参数必须是一个符合 routes 选项要求的数组
-          next();
+          // console.log('addRoutes');
+          router.addRoutes(menuRoutes);//动态添加更多的路由规则,参数必须是一个符合 routes 选项要求的数组
+          next({ name: to.name });//没辙了,不知道为啥那样个吊样子,我只能采取这种办法了,这样也能保证
+          //刷新时,还停留在原先的页面
         });
-        isAddRoutes = !isAddRoutes;
+        isAddRoutes = true;//
       }
-
-      return next();
-    } else {//否则就要去登录界面
+      return next();//这里不能写else,因为每次刷新这个index都会重置
+      //导致isAddRoutes每次都初始化为false,这儿要写了else,那每次刷新就不会来这
+    }
+    else {//否则就要去登录界面
       return next('/login');
     }
+  } else {
+    return next();//
   }
-  return next();//
 });
 
 
