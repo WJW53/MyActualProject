@@ -133,7 +133,7 @@ const router = new VueRouter({
 });
 
 let isAddRoutes = false;
-router.beforeEach(async (to, from, next) => {
+router.beforeEach((to, from, next) => {
   // console.log(to, from);
   //登陆状态校验
   if (to.path !== '/login') {
