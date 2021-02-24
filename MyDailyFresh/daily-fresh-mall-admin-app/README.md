@@ -1,4 +1,11 @@
 # daily-fresh-mall-admin-app
+
+**登录账号密码如下：**
+```
+705249953@qq.com
+123890
+```
+
 ```shell
 vue add ant-design
 ```
