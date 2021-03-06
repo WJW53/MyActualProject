@@ -1,5 +1,5 @@
+<!-- by:wjw,侵权必究,哈哈哈哈 -->
 # daily-fresh-mall-admin-app
-
 **登录账号密码如下：**
 ```
 705249953@qq.com
@@ -34,12 +34,6 @@ npm run build
 ```
 npm run lint
 ```
-
-### 每日优鲜接口说明
-
-- [每日优鲜b端接口appkey注册地址](https://mallapi.duyiedu.com/login/#/register)
-
-- [每日优鲜b端接口appkey查询地址](https://mallapi.duyiedu.com/login/#/login)
 
 
 # 每日优鲜接口文档
@@ -430,3 +424,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### 每日优鲜接口说明
+
+- [每日优鲜b端接口appkey注册地址](https://mallapi.duyiedu.com/login/#/register)
+
+- [每日优鲜b端接口appkey查询地址](https://mallapi.duyiedu.com/login/#/login)

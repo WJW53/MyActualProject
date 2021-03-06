@@ -149,7 +149,7 @@ router.beforeEach((to, from, next) => {
         store.dispatch('changeMenuRoutes', routes.concat(menuRoutes)).then(() => {
           // console.log('addRoutes');
           router.addRoutes(menuRoutes);//动态添加更多的路由规则,参数必须是一个符合 routes 选项要求的数组
-          next({ name: to.name });//没辙了,不知道为啥那样个吊样子,我只能采取这种办法了,这样也能保证
+          next({ name: to.name });//没辙了,不知道为啥那个样子(要点两次),我只能采取这种办法了,这样也能保证
           //刷新时,还停留在原先的页面
         });
         isAddRoutes = true;//
