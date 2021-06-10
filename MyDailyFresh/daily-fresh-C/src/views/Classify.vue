@@ -23,14 +23,14 @@ import List from '../components/List.vue';
 
 export default {
   async created() {
-    this.resetList();
+    this.resetList();//每次先清空,然后重新请求,因为可能有变化
     await this.getSideList(this.value);
     this.listShow = true;
   },
   data() {
     return {
       value: '时令水果',
-      listShow: false,
+      listShow: false,//是否显示商品列表
       show: true,//控制是加载效果还是具体商品信息
       place: '荔枝水果9.99',
       activeKey: '',
@@ -58,6 +58,7 @@ export default {
           }, 500);
         });
     },
+    //上拉查看下一分类
     nextSibling() {
       this.$refs.nb.nb();
     },

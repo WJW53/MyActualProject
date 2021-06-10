@@ -100,7 +100,7 @@ export default {
     },
     nextSibling() {
       if (this.nextSibling === null) {
-        this.changeOver(true);
+        this.changeOver(true);//已经到最后一个二级标签了
       } else {
         this.changeOver(false);
       }

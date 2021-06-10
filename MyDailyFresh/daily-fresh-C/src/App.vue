@@ -11,6 +11,7 @@
 export default {
   name: 'app',
   created() {
+    //因为有本地化存储的,所以这里才这样干
     const counterMap = JSON.parse(localStorage.getItem('goods')) || {};
     this.$store.commit('setCounterMap', counterMap);
   },
@@ -20,16 +21,17 @@ export default {
     };
   },
   watch: {
+    //得监听路由的变化才能配合做动画效果,这里只需对从search跳到classify时做处理即可
     $route(to, from) {
       if (to.name === 'classify' && from.name === 'search') {
         this.$router.back = true;
       }
       if (this.$router.back) {
-        this.transitionName = 'slide-right';
+        this.transitionName = 'slide-right';//退出search路由时就out-in,translateX:100%
       } else {
         this.transitionName = 'slide-left';
       }
-      this.$router.back = false;
+      this.$router.back = false;//为了下次的操作
     },
   },
 };

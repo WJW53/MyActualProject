@@ -42,16 +42,20 @@ export default {
   },
   props: ['price', 'priceOff', 'title', 'tags', 'desc', 'num', 'thumb', 'id', 'fly', 'sellOut'],
   methods: {
+    //飞入购物车
     add() {
       if (this.fly) {
         this.showMoveDot = [...this.showMoveDot, true];
       }
       this.$emit('changeHandler', this.id, 1);
+      //图片的位置
       const { top, left } = this.$refs.img.getBoundingClientRect();
-      const { left: endX, top: endY } = document
+      //购物车的位置
+      const { top: endY, left: endX  } = document
         .getElementById('shop-car')
         .getBoundingClientRect();
-      const { width, height } = getComputedStyle(this.$refs.img, null);
+      const { width, height } = getComputedStyle(this.$refs.img, null);//元素,伪类(可以不传递)
+      //新生成一张图片让它运动--飞入购物车
       Animate({
         startX: left,
         startY: top,

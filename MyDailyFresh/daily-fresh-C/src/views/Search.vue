@@ -1,6 +1,7 @@
 <template>
   <div class="search-wrapper">
     <div class="search-head">
+      <!-- 返回前一个路由记录 -->
       <van-icon name="arrow-left" class="arr-left" @click="$router.goBack()"></van-icon>
       <van-search
         class="search-content"
@@ -15,6 +16,7 @@
         <template #action v-if="showList">
           <div @click="onSearch(value)">搜索</div>
         </template>
+        <!-- 否则展示购物车的link -->
          <template #action v-else>
           <router-link tag="div" class="shop-car" id="shop-car" to="/home/shopping">
             <van-icon name="shopping-cart-o" :badge="badge"/>
@@ -22,6 +24,7 @@
         </template>
       </van-search>
     </div>
+    <!-- 可视化模糊搜索的提示词并且高亮显示关键字 -->
     <div class="like-search" v-if="likeList.length && showList">
       <van-list>
         <van-cell v-for="item in likeList" :key="item" :title="item" @click="onSearch(item)" >
@@ -69,24 +72,28 @@ export default {
   data() {
     return {
       timer: null,
-      searchList: [],
-      loading: false,
-      finished: false,
+      searchList: [],//搜索关键词的历史记录
+      loading: false,//此次加载状态结束,因为这次请求完成了
+      finished: false,//没有更多数据了
       value: '',
       length: 0,
       place: '芒果10块2斤',
-      likeList: [],
-      showList: true,
+      likeList: [],//模糊搜索的匹配字段,我们给它提示出来
+      showList: true,//历史记录是否显示
       list: [],
       page: 1,
       size: 7,
     };
+  },
+  created() {
+    this.searchList = JSON.parse(localStorage.getItem('searchList')) || [];
   },
   methods: {
     ...mapMutations(['storageChange']),
     addCounter(id, value) {
       this.storageChange({ id, value });
     },
+    //搜索后的操作..
     onSearch(val) {
       if (val) {
         this.value = val;
@@ -97,24 +104,26 @@ export default {
         this.value = this.place;
       }
       const result = this.searchList.find((item) => item.value === this.value);
-      if (result) {
+      if (result) {//如果之前搜索过,就更新时间戳,就是优先排序
         result.time = new Date().getTime();
         this.searchList.sort((a, b) => b.time - a.time);
       } else {
+        //每次都将最新的搜索加入记录表中,最多10个记录
         this.searchList.unshift({ value: this.value, time: new Date().getTime() });
         if (this.searchList.length >= 11) {
           this.searchList.pop();
         }
       }
-      localStorage.setItem('searchList', JSON.stringify(this.searchList));
+      localStorage.setItem('searchList', JSON.stringify(this.searchList));//记得存储起来
       this.list = [];
-      this.page = 1;
+      this.page = 1;//然后就请求数据呗
       this.$api.Search(this.value, this.page, this.size).then((data) => {
         this.length = data.data.total;
         this.list = [...this.list, ...data.data.list];
         this.showList = false;
       });
     },
+    //加载搜索结果
     onLoad() {
       this.page += 1;
       this.$api.Search(this.value, this.page, this.size).then((data) => {
@@ -127,13 +136,15 @@ export default {
         }
       });
     },
+    //对输入框的处理
     input() {
       if (this.value === '') {
         this.likeList = [];
-        clearInterval(this.timer);
+        clearInterval(this.timer);//必须清空,不然请求会有两次
         this.timer = null;
         return;
       }
+      //做个防抖功能,节省请求次数
       if (this.timer) {
         clearInterval(this.timer);
         this.timer = null;
@@ -147,10 +158,12 @@ export default {
         }, 300);
       }
     },
+    //高亮显示搜索关键字
     formatHTML(value) {
       const reg = new RegExp(this.value, 'g');
-      return value.replace(reg, this.value.fontcolor('red'));
+      return value.replace(reg, this.value.fontcolor('red'));//这个fontcolor是原生的方法,控制台里玩玩就懂了
     },
+    //再次回到搜索框的话,就显示历史记录界面而不再显示商品列表
     focus() {
       this.showList = true;
     },
@@ -166,9 +179,6 @@ export default {
       }
       return l;
     },
-  },
-  created() {
-    this.searchList = JSON.parse(localStorage.getItem('searchList')) || [];
   },
 };
 </script>
@@ -204,7 +214,7 @@ export default {
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 30px;
+    padding-left: 32px;
     background: #fff;
     z-index: 10;
   }

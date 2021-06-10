@@ -40,13 +40,45 @@ import Card from '../components/card.vue';
 export default {
   data() {
     return {
-      checked: false,
-      result: [],
+      checked: false,//是否全选
+      result: [],//所选中的数据
       list: [],
     };
   },
   components: {
     Card,
+  },
+  computed: {
+    ...mapState({
+      counterMap: (state) => state.counterMap,
+    }),
+    totalNum() {
+      const resArr = this.list.filter((item) => this.result.includes(item.id));//是否选中了它
+      const res = resArr.reduce((prev, next) => prev + (this.counterMap[next.id] || 0), 0);
+      return res;
+    },
+    allMoney() {
+      const resArr = this.list.filter((item) => this.result.includes(item.id));
+      return resArr.reduce((prev, next) => {
+        const num = this.counterMap[next.id] || 0;
+        return (Math.round(num * next.price * 100) + prev);
+      }, 0);
+    },
+  },
+  created() {
+    this.getAllData();
+  },
+  watch: {
+    counterMap() {
+      // this.getAllData();
+    },
+    result() {
+      if (this.result.length === this.list.length) {
+        this.checked = true;//代表全选了
+      } else {
+        this.checked = false;//只要长度不等,就代表没有全选
+      }
+    },
   },
   methods: {
     ...mapMutations(['storageChange']),
@@ -57,7 +89,7 @@ export default {
         return;
       }
       if (this.checked) {
-        this.$refs.checkboxGroup.toggleAll(true);
+        this.$refs.checkboxGroup.toggleAll(true);//全选
       } else {
         this.$refs.checkboxGroup.toggleAll(false);
       }
@@ -75,7 +107,7 @@ export default {
     },
     async del() {
       if (this.result.length === 0) {
-        this.$Toast('你没有选中商品');
+        this.$Toast('你没有选中商品');//弹出层
         return;
       }
       try {
@@ -91,7 +123,7 @@ export default {
             if (len === -1) {
               return true;
             }
-            this.result.splice(len, 1);
+            this.result.splice(len, 1);//找到并删除这个商品信息
             return false;
           },
         );
@@ -106,48 +138,15 @@ export default {
     },
     async getAllData() {
       const result = Object.keys(this.counterMap);
-      const res = await this.$api.getGoodsByIds(result.join());
+      const res = await this.$api.getGoodsByIds(result.join());//"12,234"
       this.list = res.data.list;
       this.$nextTick(() => {
         if (this.$refs.checkboxGroup) {
-          this.$refs.checkboxGroup.toggleAll(true);
+          this.$refs.checkboxGroup.toggleAll(true);//就是每次都会默认全选
         }
       });
     },
   },
-  watch: {
-    counterMap() {
-      // this.getAllData();
-    },
-    result() {
-      if (this.result.length === this.list.length) {
-        this.checked = true;
-      } else {
-        this.checked = false;
-      }
-    },
-  },
-  computed: {
-    ...mapState({
-      counterMap: (state) => state.counterMap,
-    }),
-    totalNum() {
-      const resArr = this.list.filter((item) => this.result.includes(item.id));
-      const res = resArr.reduce((prev, next) => prev + (this.counterMap[next.id] || 0), 0);
-      return res;
-    },
-    allMoney() {
-      const resArr = this.list.filter((item) => this.result.includes(item.id));
-      return resArr.reduce((prev, next) => {
-        const num = this.counterMap[next.id] || 0;
-        return (Math.round(num * next.price * 100) + prev);
-      }, 0);
-    },
-  },
-  created() {
-    this.getAllData();
-  },
-
 };
 </script>
 <style lang="less" scoped>

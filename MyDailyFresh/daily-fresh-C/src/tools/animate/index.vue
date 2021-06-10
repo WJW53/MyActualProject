@@ -4,7 +4,8 @@
     transform: `translate(${moveX}px,${moveY}px) scale(${sx},${sy})`,
     opacity, width, height}'
   v-if='exist'>
-  <img :src="src"></div>
+    <img :src="src">
+  </div>
 </template>
 
 <script>
@@ -20,6 +21,7 @@ export default {
     z-index: 100;
     top: 0;
     left: 0;
+    /* 因为有个运动变化的问题,本身是默认都50%的,所以我这里做个微调 */
     transform-origin: 5% 0%;
   }
   .item > img {

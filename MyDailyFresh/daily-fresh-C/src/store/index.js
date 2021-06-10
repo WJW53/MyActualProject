@@ -13,7 +13,7 @@ export default new Vuex.Store({
     counterMap: {},//id:num, 有num个商品(id)
     size: 7,
     sortType: 'all',
-    over: false,
+    over: false,//是否到了最后一个二级导航了,为了做上拉查看下一分类而用上
   },
   mutations: {
     changeOver(state, bool) {
