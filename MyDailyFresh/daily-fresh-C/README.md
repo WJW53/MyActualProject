@@ -1,5 +1,20 @@
 # 每日优鲜C端项目
 
+## 配置
+
+1. 利用Vue-cli初始化项目
+2. 配置lib-flexible
+https://github.com/amfe/lib-flexible/blob/master/src/flexible.js
+
+3. 配置postcss-px2rem
+https://www.npmjs.com/package/postcss-px2rem
+将我们的px单位自动转换为rem进行适配
+
+4. 配置vant
+https://youzan.github.io/vant/#/zh-CN/quickstart
+移动端UI组件库
+
+
 ## 项目接口
 
 base: https://mallapi.duyiedu.com/goods/

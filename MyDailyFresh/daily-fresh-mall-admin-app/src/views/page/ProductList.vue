@@ -85,6 +85,7 @@ export default {
               category: this.categoryObj[item.category],
             };
           });
+          // console.log(res);
         });
     },
     changePage(page) {

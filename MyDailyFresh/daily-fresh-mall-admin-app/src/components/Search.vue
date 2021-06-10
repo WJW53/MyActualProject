@@ -63,6 +63,7 @@ export default {
     //提交表单时触发的函数
     handleSubmit(e) {
       //   console.log(this.searchForm);
+      // console.log("搜索关键字为",this.searchForm.searchWord);
       this.$emit("submit", this.searchForm);
     },
     //切换类目时触发的函数

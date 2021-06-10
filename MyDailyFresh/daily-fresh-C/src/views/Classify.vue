@@ -4,7 +4,7 @@
       <van-icon name="search" />
       <div class="search-value">{{place}}</div>
     </router-link>
-    <!-- 水平滚动 -->
+    <!-- 水平滚动,原生JS,DOM操作,因为是涉及滚动,所以vue没法操控 -->
    <Tabs @handlerChange="getSide"></Tabs>
    <div class="classify-content" v-if="show">
      <side-bar ref="nb" :menuList="sideList" ></side-bar>
@@ -86,6 +86,7 @@ export default {
     border-radius: 10px;
     text-align: center;
     color: #a1a1a1;
+    //它下面的所有元素
     >* {
       vertical-align: middle;
       display: inline-block;

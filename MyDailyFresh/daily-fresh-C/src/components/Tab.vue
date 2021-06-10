@@ -1,4 +1,5 @@
 <template>
+<!-- 手离开屏幕,点击到屏幕上,在屏幕上滚动 -->
   <div class="tab-wrapper" ref="scroll"
   @touchend="scrollTo"
   @touchstart="move = false"
@@ -21,7 +22,7 @@ export default {
   data() {
     return {
       index: 0,
-      move: false,
+      move: false,//是否正在移动
       menuList: [
         {
           title: '时令水果',
@@ -114,14 +115,21 @@ export default {
     scrollTo(e) {
       if (this.move) return;
       this.$store.commit('resetGoodsList');
-      if (e.target.dataset.id) {
+      if (e.target.dataset.id) {//获取索引位置,以及做个适配
         this.index = e.target.dataset.id;
       } else if (e.target.parentElement.dataset.id) {
         this.index = e.target.parentElement.dataset.id;
       } else {
         this.index = e.target.parentElement.parentElement.dataset.id;
       }
-      this.$emit('handlerChange', this.menuList[this.index].title);
+      this.$emit('handlerChange', this.menuList[this.index].title);//同时更新侧边栏数据
+      //为了让点击之后的item处于导航栏中心而做的运动计算
+      //下面是计算尺寸精髓,要画图自己琢磨的
+      //getBoundingClientRect()返回元素的大小及其相对于视口的位置
+      //当当前item在中心右边时：
+      //disX = s.offsetWidth/2 + s.getBoundingClientRect().left - p.offsetWidth/2
+      //滚动条的距离应该是:父级元素的滚动条 + disX
+      //相反情况时最后的公式发现,取负即可,所以我们最终取绝对值配合方向即可
       const itemOL = e.target.getBoundingClientRect().left;
       const itemOW = e.target.offsetWidth;
       const wrapperWidth = this.$refs.scroll.clientWidth;
@@ -131,14 +139,14 @@ export default {
     moveScroll(start, end) {
       let dis = 0;
       let speed = 5;
-      if (end < 0) {
+      if (end < 0) {//左边item变到中间
         speed *= -1;
       }
       const t = setInterval(() => {
         dis += speed;
         this.$refs.scroll.scrollLeft = start + dis;
-        if (Math.abs(dis) >= Math.abs(end)) {
-          this.$refs.scroll.scrollLeft = start + end;
+        if (Math.abs(dis) >= Math.abs(end)) {//超过了就不要再动了
+          this.$refs.scroll.scrollLeft = start + end;//所以这里是直接赋值
           clearInterval(t);
         }
       }, 2);
@@ -151,7 +159,7 @@ export default {
   .tab-wrapper {
     display: flex;
     height: 104px;
-    overflow-x: auto;
+    overflow-x: auto;//超出部分滚动,scroll也行
     overflow-y: visible;
     .tab-item {
       flex-shrink: 0;
@@ -179,7 +187,7 @@ export default {
         font-size: 12px;
       }
     }
-    .active {
+    .active {//激活状态
       .img-box {
         background: #fff;
         border-color: #d13193;
@@ -192,7 +200,7 @@ export default {
       }
     }
   }
-  .tab-wrapper::-webkit-scrollbar{
+  .tab-wrapper::-webkit-scrollbar{//隐藏滚动条
     width: 0px;
     background: none;
   }

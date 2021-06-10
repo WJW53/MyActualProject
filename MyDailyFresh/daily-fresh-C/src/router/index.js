@@ -14,7 +14,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '*',
+    path: '*',//任何其他路由都会跳转到分类路由里
     redirect: '/home/classify',
   },
   {

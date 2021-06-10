@@ -105,3 +105,17 @@ initial-scale缩放值= 1 / DPR;
 就是实现不同的元素、内容，在不同的屏幕下，给大家的感觉是一样的
 
 所有东西都适配好后，就可以按一倍屏来做（效果上而已）
+
+```js
+function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+        if (width / dpr > 540) {
+            width = 540 * dpr;
+        }
+        var rem = width / 10;
+        docEl.style.fontSize = rem + 'px';
+        flexible.rem = win.rem = rem;
+    }
+```
+
+rem为当前屏幕宽度的1/10,字体大小默认是1rem
