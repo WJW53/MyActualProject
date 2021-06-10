@@ -10,6 +10,7 @@
      <side-bar ref="nb" :menuList="sideList" ></side-bar>
      <List @turnNext="nextSibling" v-if="listShow"></List>
    </div>
+   <!-- 加载效果 -->
    <van-loading class="center" size="1.3rem" color="pink" v-else />
   </div>
 </template>
@@ -30,7 +31,7 @@ export default {
     return {
       value: '时令水果',
       listShow: false,
-      show: true,
+      show: true,//控制是加载效果还是具体商品信息
       place: '荔枝水果9.99',
       activeKey: '',
     };

@@ -1,6 +1,6 @@
 export const URLs = {
-  likeSearch: '/likeSearch',
-  getSide: '/getsidebar',
+  likeSearch: '/likeSearch',//模糊搜索
+  getSide: '/getsidebar',//侧边栏导航
   getGoodsList: '/getGoodsList',
   // '/getgoodsList',
   search: '/search',

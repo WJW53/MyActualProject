@@ -4,6 +4,7 @@
   @touchmove="up"
   @touchend="end"
   ref="wrapper">
+  <!-- 分为两部分 -->
     <div class="list-header">
       <div :class="{active: type === 'all'}" @touchend="changeType('all')">综合</div>
       <div :class="{active: type === 'sale'}" @touchend="changeType('sale')">销量</div>
@@ -53,7 +54,7 @@ export default {
   data() {
     return {
       showLoading: false,
-      type: 'all',
+      type: 'all',//默认展示全部这个二级导航下的商品列表
       isLoad: false,
       finished: false,
       loading: false,
@@ -69,8 +70,9 @@ export default {
     ...mapActions(['getGoodsList']),
     ...mapMutations(['resetList', 'sortGoodsList', 'storageChange']),
     addCounter(id, value) {
-      this.storageChange({ id, value });
+      this.storageChange({ id, value });//本地化存储
     },
+    //上滑滚动加载
     onLoad() {
       if (this.finished) {
         return;
@@ -80,7 +82,7 @@ export default {
         this.loading = false;
         this.showLoading = false;
         if (this.list.length >= this.total) {
-          this.finished = true;
+          this.finished = true;//加载完毕了
         }
       });
     },
@@ -94,18 +96,20 @@ export default {
       } else {
         this.type = val;
       }
-      this.sortGoodsList(this.type);
-      this.resetList();
+      this.sortGoodsList(this.type);//改变类型
+      this.resetList();//清空
       // this.getGoodsList()
+      //注意这些对于状态的控制!!
       this.showLoading = true;
       this.nowPage = 1;
-      await this.getGoodsList({ type: this.goodsType, page: this.nowPage });
+      await this.getGoodsList({ type: this.goodsType, page: this.nowPage });//重新得到商品列表信息
       this.finished = false;
       this.isloading = false;
       this.list.sort();
       this.isLoad = false;
       this.showLoading = false;
     },
+    //下拉刷新数据
     onRefresh() {
       this.nowPage = 0;
       this.showLoading = true;
@@ -206,7 +210,7 @@ export default {
       border-bottom: 1px solid #eee;
       display: flex;
       font-size: 12px;
-      justify-content: flex-end;
+      justify-content: flex-end;//靠右排列
       z-index: 100;
       background: #fff;
       > div {
@@ -221,23 +225,24 @@ export default {
         color: #ff1a90;
         font-weight: bold;
       }
+      //制造三角形,after是下三角,before伪元素对应上三角
       .price::after {
         content: '';
         border: 4px solid transparent;
-        border-top-color: #aaa;
         position: absolute;
-        bottom: 4px;
         right: 0;
+        border-top-color: #aaa;
+        bottom: 4px;
       }
       .price::before {
         content: '';
-        border: 4px solid transparent;
-        border-bottom-color: #aaa;
         position: absolute;
-        top: 4px;
+        border: 4px solid transparent;
         right: 0;
+        border-bottom-color: #aaa;
+        top: 4px;
       }
-      .price-up::before {
+      .price-up::before {//选中效果
         border-bottom-color: #ff1a90;
       }
       .price-down::after {
@@ -257,6 +262,7 @@ export default {
     width: 0px;
     background: none;
   }
+  //Card已经抽离出来了
   .card {
     width: 100%;
     box-sizing: border-box;
@@ -336,7 +342,7 @@ export default {
     }
   }
   .van-pull-refresh {
-    overflow: unset;
+    overflow: unset;//不设置,为了解决那个 下拉范围 问题..
   }
 
   .overflow-hidden {

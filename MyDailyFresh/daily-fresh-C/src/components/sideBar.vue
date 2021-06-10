@@ -40,8 +40,9 @@ export default {
       if (this.move) {
         return;
       }
-      this.resetGoodsList();
+      this.resetGoodsList();//先清空(为了到时重新获取对应一级及二级标签下的所有商品信息)
       this.nextSibling = e.target.nextElementSibling;
+      //这里是纵向滚动,原理同水平时一致
       const cTop = e.target.getBoundingClientRect().top;
       const sideTop = this.$refs.side.offsetTop;
       const sideHeight = this.$refs.side.offsetHeight / 2;
@@ -54,7 +55,7 @@ export default {
       this.value = item;
       this.getGoodsList({ type: item, page: 1 });
     },
-    moveScroll(start, end) {
+    moveScroll(start, end) {//滚动函数,用原生写
       if (this.move) {
         this.move = false;
         return;

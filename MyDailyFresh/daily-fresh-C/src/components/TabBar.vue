@@ -21,6 +21,7 @@ export default {
     ...mapState({
       counterMap: (state) => state.counterMap,
     }),
+    //统计要添加进所有的购物车的商品数量
     badge() {
       const l = Object.values(this.counterMap).reduce((prev, next) => prev + next, 0);
       if (l > 99) {

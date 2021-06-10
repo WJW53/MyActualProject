@@ -171,7 +171,7 @@ export default {
       }
 
   }
-  .overflow-hidden {
+  .overflow-hidden {//溢出打点
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

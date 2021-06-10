@@ -81,7 +81,7 @@ export default {
       try {
         await this.$Dialog.confirm({ message: '您是否要删除已选中商品' });
         this.result.forEach((id) => {
-          this.storageChange({ id, value: -1 });
+          this.storageChange({ id, value: -1, delAll:true });
         });
         this.list = this.list.filter(
           (item) => {

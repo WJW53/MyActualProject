@@ -8,7 +8,7 @@ const instance = Axios.create({
     appkey,
   },
 });
-
+//统一管理接口请求
 const likeSearch = (value) => instance.get(
   URLs.likeSearch,
   { params: { likeValue: value } },

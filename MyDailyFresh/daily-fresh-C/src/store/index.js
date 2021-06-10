@@ -10,7 +10,7 @@ export default new Vuex.Store({
     goodsList: [],
     goodsTotal: 0,
     goodsType: '',
-    counterMap: {},
+    counterMap: {},//id:num, 有num个商品(id)
     size: 7,
     sortType: 'all',
     over: false,
@@ -29,7 +29,7 @@ export default new Vuex.Store({
       state.sideList = list;
     },
     setGoodsList(state, obj) {
-      state.goodsList = [...state.goodsList, ...obj.list];
+      state.goodsList = [...state.goodsList, ...obj.list];//这是因为滚动加载,要重新push合并
       state.goodsTotal = obj.total;
     },
     resetGoodsList(state) {
@@ -41,12 +41,16 @@ export default new Vuex.Store({
     resetList(state) {
       state.goodsList = [];
     },
-    storageChange(state, { id, value }) {
+    //修改本地化存储的一些值,delAll就是全选状态下的删除
+    storageChange(state, { id, value, delAll=false }) {
       if (state.counterMap[id]) {
-        if (state.counterMap[id] === 1 && value === -1) {
+        if ((state.counterMap[id] === 1 && value === -1) || delAll===true) {
           Vue.delete(state.counterMap, id);
         } else {
           Vue.set(state.counterMap, id, state.counterMap[id] + value);
+          // if(state.counterMap[id] < 1){
+          //   Vue.delete(state.counterMap, id);
+          // }
         }
       } else {
         Vue.set(state.counterMap, id, 1);
@@ -69,9 +73,9 @@ export default new Vuex.Store({
         dispatch('getGoodsList', { type: data.data[0], page: 1 });
       });
     },
-    getGoodsList({ commit, state }, t) {
-      const type = t.type || state.goodsType;
-      const { page } = t;
+    getGoodsList({ commit, state }, options) {
+      const type = options.type || state.goodsType;
+      const { page } = options;
       return api.getGoodsList(type, page, state.size, state.sortType).then((data) => {
         commit('setGoodsList', data.data);
         commit('setGoodsType', type);
