@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/elem.css">
+</head>
+<body>
+  <script src="/scripts/vue.js" ></script>
+  <script src="/scripts/elem.js"></script>
+  <div id="app">
+    <el-row type="flex" justify="center">
+      <el-cow :span="8" >
+       <h1 style="color:#409EFF">每日优鲜注册平台</h1>
+       <el-form label-position="right" label-width="80px" :model="user">
+        <el-form-item label="用户名:">
+          <el-input v-model="user.name"></el-input>
+        </el-form-item>
+        <el-form-item label="密码:">
+          <el-input v-model="user.pw" placeholder="请输入密码" type="password"></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" >登陆</el-button>
+          <el-button type="success">注册</el-button>
+          <el-button type="danger">找回密码</el-button>
+        </el-form-item>
+      </el-form>
+       
+      </el-cow>
+    </el-row>
+  </div>
+  <script>
+      new Vue({
+        el: "#app",
+        data: {
+          user: {
+            name:'',
+            pw: ''
+          }
+        }
+      })
+
+
+  </script>
+</body>
+</html>

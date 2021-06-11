@@ -1,0 +1,2479 @@
+[
+    {
+        "_id": {
+            "$oid": "5ef98661e80c18c612b3be24"
+        },
+        "id": {
+            "$numberDouble": "16.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/老树雪花梨.jpg"
+            }
+        ],
+        "title": "老树雪花梨 5斤装 单果260g~320g",
+        "price": {
+            "$numberDouble": "19.9"
+        },
+        "price_off": null,
+        "desc": "甜中带酸 缀满枝头 硕果满枝",
+        "tags": [
+            "限时秒杀"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "香梨"
+    },
+    {
+        "_id": {
+            "$oid": "5ef98661e80c18c612b3be25"
+        },
+        "id": {
+            "$numberInt": "14"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/丰水梨5金装.jpg",
+                "uid": {
+                    "$numberInt": "0"
+                },
+                "status": "done"
+            },
+            {
+                "url": "http://duyi-bucket.oss-cn-beijing.aliyuncs.com/mall-admin/images/%E9%BB%84%E6%A8%B1%E6%A1%831593413677378.jpg",
+                "uid": {
+                    "$numberInt": "1"
+                },
+                "name": "黄樱桃.jpg",
+                "status": "done"
+            }
+        ],
+        "title": "丰水梨5金装 单果300g起",
+        "price": {
+            "$numberDouble": "29.9"
+        },
+        "price_off": {
+            "$numberDouble": "29.9"
+        },
+        "desc": "润肺去火 应季佳品",
+        "tags": [
+            "限时秒杀",
+            "满69-10"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "name": "单果",
+        "number": "12321001",
+        "status": {
+            "$numberInt": "1"
+        },
+        "unit": "g",
+        "c_item": "香梨"
+    },
+    {
+        "_id": {
+            "$oid": "5ef986a1e80c18c612b3be26"
+        },
+        "id": {
+            "$numberInt": "10003"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/榴莲.jpg",
+                "uid": {
+                    "$numberInt": "0"
+                },
+                "status": "done"
+            },
+            {
+                "url": "http://duyi-bucket.oss-cn-beijing.aliyuncs.com/mall-admin/images/liqour%20(3)1593504309947.jpg",
+                "uid": {
+                    "$numberInt": "1"
+                },
+                "name": "liqour (3).jpg",
+                "status": "done"
+            }
+        ],
+        "title": "【产地直发】马来西亚猫山王榴莲果肉500g",
+        "price": {
+            "$numberInt": "109"
+        },
+        "price_off": {
+            "$numberInt": "99"
+        },
+        "desc": "冰激凌口感甜糯肉多",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "94.0"
+        },
+        "category": {
+            "$numberInt": "2"
+        },
+        "inventory": {
+            "$numberInt": "100"
+        },
+        "c_item": "榴莲",
+        "name": "榴莲",
+        "number": "1232121",
+        "status": {
+            "$numberInt": "1"
+        },
+        "unit": "g"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be28"
+        },
+        "id": {
+            "$numberDouble": "10005.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/泰国金柚.jpg"
+            }
+        ],
+        "title": "【产地直发】泰国金柚两粒装单果600g起",
+        "price": {
+            "$numberDouble": "69.9"
+        },
+        "price_off": null,
+        "desc": "果肉晶莹剔透圆润饱满",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "柚子"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be29"
+        },
+        "id": {
+            "$numberDouble": "10006.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/西瓜.jpg"
+            }
+        ],
+        "title": "【产地直发】山东2k小西瓜 4-5斤装",
+        "price": {
+            "$numberDouble": "26.9"
+        },
+        "price_off": null,
+        "desc": "果肉晶莹剔透圆润饱满",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10110.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "93.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "西瓜"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be2a"
+        },
+        "id": {
+            "$numberInt": "11"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/大连美早129.jpg",
+                "uid": {
+                    "$numberInt": "0"
+                },
+                "status": "done"
+            },
+            {
+                "url": "http://duyi-bucket.oss-cn-beijing.aliyuncs.com/mall-admin/images/%E7%BA%A2%E6%A8%B1%E6%A1%831593414410048.jpg",
+                "uid": {
+                    "$numberInt": "1"
+                },
+                "name": "红樱桃.jpg",
+                "status": "done"
+            }
+        ],
+        "title": "【顺丰空运】烟台美早大樱桃，颗颗饱满",
+        "price": {
+            "$numberDouble": "89.9"
+        },
+        "price_off": {
+            "$numberDouble": "59.9"
+        },
+        "desc": "凌晨采摘 现摘现发 顺丰空运 颗颗饱满",
+        "tags": [
+            "限时秒杀",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "name": "苹果",
+        "number": "12321",
+        "status": {
+            "$numberInt": "1"
+        },
+        "unit": "g",
+        "c_item": "车厘子"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be2b"
+        },
+        "id": {
+            "$numberDouble": "6.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/大连美早129.jpg"
+            }
+        ],
+        "title": "大连美早樱桃好吃到爆",
+        "price": {
+            "$numberDouble": "119.0"
+        },
+        "price_off": {
+            "$numberDouble": "99.0"
+        },
+        "desc": "现摘现发的大樱桃 口感太爽啦",
+        "tags": [
+            "24小时发货"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "92.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "车厘子"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be2d"
+        },
+        "id": {
+            "$numberInt": "2"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/苹果.jpg",
+                "uid": {
+                    "$numberInt": "0"
+                },
+                "status": "done"
+            },
+            {
+                "url": "http://duyi-bucket.oss-cn-beijing.aliyuncs.com/mall-admin/images/%E8%93%9D%E8%8E%931593413624174.jpg",
+                "uid": {
+                    "$numberInt": "1"
+                },
+                "name": "蓝莓.jpg",
+                "status": "done"
+            }
+        ],
+        "title": "甜美无比 甘甜适口 余味无穷",
+        "price": {
+            "$numberDouble": "29.9"
+        },
+        "price_off": {
+            "$numberDouble": "19.9"
+        },
+        "desc": "甜中带酸 缀满枝头 硕果满枝",
+        "tags": [
+            "24小时发货"
+        ],
+        "sale": {
+            "$numberDouble": "10003.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "98.0"
+        },
+        "category": {
+            "$numberInt": "2"
+        },
+        "inventory": {
+            "$numberInt": "100"
+        },
+        "name": "荔枝",
+        "number": "1232121",
+        "status": {
+            "$numberInt": "1"
+        },
+        "unit": "g",
+        "c_item": "苹果"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be2e"
+        },
+        "id": {
+            "$numberDouble": "7.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/冰淇淋蜜瓜.jpg"
+            }
+        ],
+        "title": "【冰淇淋蜜瓜】山东玉菇瓜王",
+        "price": {
+            "$numberDouble": "29.9"
+        },
+        "price_off": {
+            "$numberDouble": "19.9"
+        },
+        "desc": "爆甜 多汁",
+        "tags": [
+            "24小时发货",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10002.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "90.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "甜瓜蜜瓜"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be2f"
+        },
+        "id": {
+            "$numberDouble": "8.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/脆甜爽口.jpg"
+            }
+        ],
+        "title": "【脆甜爽口】阎良小仔蜜瓜超级好吃",
+        "price": {
+            "$numberDouble": "49.9"
+        },
+        "price_off": {
+            "$numberDouble": "35.9"
+        },
+        "desc": "应季鲜果 产地直发 脆甜多汁",
+        "tags": [
+            "24小时发货"
+        ],
+        "sale": {
+            "$numberDouble": "10003.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "58.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "甜瓜蜜瓜"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be30"
+        },
+        "id": {
+            "$numberDouble": "10020.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/智利绿果12个装.jpg"
+            }
+        ],
+        "title": "【产地直发】智力绿果12个装当过90g起",
+        "price": {
+            "$numberDouble": "35.0"
+        },
+        "price_off": {
+            "$numberDouble": "32.9"
+        },
+        "desc": "酸甜多汁 细嫩爽滑",
+        "tags": [
+            "24小时发货",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10002.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "90.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "奇异果"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be31"
+        },
+        "id": {
+            "$numberDouble": "10021.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/牛油果.jpg"
+            }
+        ],
+        "title": "【产地直发】秘鲁巨无霸牛油果6个装单果180克+",
+        "price": {
+            "$numberDouble": "79.9"
+        },
+        "price_off": null,
+        "desc": "营养丰富 宝宝辅食",
+        "tags": [
+            "24小时发货",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10002.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "93.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "牛油果"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be32"
+        },
+        "id": {
+            "$numberDouble": "10022.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/海南黄金百香果.jpg"
+            }
+        ],
+        "title": "【产地直发】海南黄金百香果12个装单果65克+",
+        "price": {
+            "$numberDouble": "39.9"
+        },
+        "price_off": {
+            "$numberDouble": "19.9"
+        },
+        "desc": "果香浓郁 酸甜可口",
+        "tags": [
+            "24小时发货",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10002.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "93.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "百香果"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be33"
+        },
+        "id": {
+            "$numberDouble": "20.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/菲律宾香蕉3金装.jpg"
+            }
+        ],
+        "title": "菲律宾香蕉3斤装",
+        "price": {
+            "$numberDouble": "35.0"
+        },
+        "price_off": {
+            "$numberDouble": "29.9"
+        },
+        "desc": "香甜美味 一口甜到心里",
+        "tags": [
+            "限时秒杀",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "香蕉葡萄"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be34"
+        },
+        "id": {
+            "$numberDouble": "10024.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/葡萄.jpg"
+            }
+        ],
+        "title": "【产地直发】茉莉香无籽红提3斤装",
+        "price": {
+            "$numberDouble": "59.9"
+        },
+        "price_off": {
+            "$numberDouble": "49.9"
+        },
+        "desc": "口感好 营养高",
+        "tags": [
+            "限时秒杀",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "香蕉葡萄"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be35"
+        },
+        "id": {
+            "$numberDouble": "18.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/买4送1山东青岛蓝莓.jpg"
+            }
+        ],
+        "title": "【买4送1】山东青岛蓝莓大个滴 好吃",
+        "price": {
+            "$numberDouble": "69.9"
+        },
+        "price_off": {
+            "$numberDouble": "49.9"
+        },
+        "desc": "源自青岛 酸甜可口",
+        "tags": [
+            "限时秒杀",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "草莓蓝莓"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be36"
+        },
+        "id": {
+            "$numberDouble": "5.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/草莓.jpg"
+            }
+        ],
+        "title": "3斤丹东99红颜草莓单果20g+",
+        "price": {
+            "$numberDouble": "99.0"
+        },
+        "price_off": {
+            "$numberDouble": "59.9"
+        },
+        "desc": "咬一口香甜爆浆 大盒装全家共享",
+        "tags": [
+            "24小时发货",
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10000.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "98.0"
+        },
+        "category": {
+            "$numberDouble": "2.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "草莓蓝莓"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be37"
+        },
+        "id": {
+            "$numberDouble": "20001.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yys (5).jpg"
+            }
+        ],
+        "title": "【12瓶】农夫山泉饮用天然水婴儿水1L*12",
+        "price": {
+            "$numberDouble": "98.0"
+        },
+        "price_off": {
+            "$numberDouble": "89.9"
+        },
+        "desc": "淡矿化度 适合婴幼儿",
+        "tags": [
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "饮用水"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be38"
+        },
+        "id": {
+            "$numberDouble": "20002.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yys (1).jpg"
+            }
+        ],
+        "title": "天地精华 饮用天然矿泉水550ml*20瓶 整箱",
+        "price": {
+            "$numberDouble": "29.9"
+        },
+        "price_off": null,
+        "desc": "矿泉宝藏发现者",
+        "tags": [
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "饮用水"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be39"
+        },
+        "id": {
+            "$numberDouble": "20003.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yys (2).jpg"
+            }
+        ],
+        "title": "农夫山泉饮用天然水5L*12桶装水",
+        "price": {
+            "$numberDouble": "129.0"
+        },
+        "price_off": {
+            "$numberDouble": "100.0"
+        },
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "饮用水"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be3a"
+        },
+        "id": {
+            "$numberDouble": "20004.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yys (3).jpg"
+            }
+        ],
+        "title": "云海湾 饮用天然矿泉水1.5L*6瓶 整箱新西兰进口",
+        "price": {
+            "$numberDouble": "49.9"
+        },
+        "price_off": null,
+        "desc": "大自然的馈赠 新西兰原装进口",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10021.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "98.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "饮用水"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9871ae80c18c612b3be3b"
+        },
+        "id": {
+            "$numberDouble": "20005.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yys (4).jpg"
+            }
+        ],
+        "title": "依云(evian) 天然矿泉水330ml*20整箱玻璃瓶",
+        "price": {
+            "$numberDouble": "189.0"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "饮用水"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be3c"
+        },
+        "id": {
+            "$numberDouble": "20006.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/TSYL (1).jpg"
+            }
+        ],
+        "title": "可口可乐碳酸饮料200ml*12罐mini迷你罐汽水",
+        "price": {
+            "$numberDouble": "28.9"
+        },
+        "price_off": null,
+        "desc": "欢乐时刻 怎能少得了快乐水",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "59.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "碳酸饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be3d"
+        },
+        "id": {
+            "$numberDouble": "20007.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/TSYL (2).jpg"
+            }
+        ],
+        "title": "元気森林苏打气泡水无糖白桃味480ml*10瓶饮料",
+        "price": {
+            "$numberDouble": "28.9"
+        },
+        "price_off": null,
+        "desc": "0糖 0脂肪 0卡路里",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "89.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "碳酸饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be3e"
+        },
+        "id": {
+            "$numberDouble": "20008.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/TSYL (3).jpg"
+            }
+        ],
+        "title": "汉口二厂 汽水荔枝味275ml*8瓶含气果汁饮料碳酸玻璃瓶",
+        "price": {
+            "$numberDouble": "68.0"
+        },
+        "price_off": null,
+        "desc": "人生是没有什么跨不过去的",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10010.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "碳酸饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be3f"
+        },
+        "id": {
+            "$numberDouble": "20009.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/TSYL (4).jpg"
+            }
+        ],
+        "title": "可口可乐零度碳酸饮料200ml*12罐mini迷你罐汽水",
+        "price": {
+            "$numberDouble": "28.9"
+        },
+        "price_off": null,
+        "desc": "这感觉 够爽",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10110.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "碳酸饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be40"
+        },
+        "id": {
+            "$numberDouble": "20010.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/TSYL (5).jpg"
+            }
+        ],
+        "title": "汉口二厂含气果汁汽水网红碳酸饮料275ml*8瓶",
+        "price": {
+            "$numberDouble": "78.0"
+        },
+        "price_off": null,
+        "desc": "解锁不同口味的秘密",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10110.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "碳酸饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be41"
+        },
+        "id": {
+            "$numberDouble": "20011.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/tea (1).jpg"
+            }
+        ],
+        "title": "农夫山泉茶派玫瑰荔枝茶整箱装",
+        "price": {
+            "$numberDouble": "64.9"
+        },
+        "price_off": null,
+        "desc": "农夫山泉茶π果味茶饮料",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "茶饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be42"
+        },
+        "id": {
+            "$numberDouble": "20012.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/tea (2).jpg"
+            }
+        ],
+        "title": "三得利乌龙茶无糖饮料500ml*15瓶整箱",
+        "price": {
+            "$numberDouble": "45.9"
+        },
+        "price_off": null,
+        "desc": "精选茶叶 天然茶多酚",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10210.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "89.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "茶饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be43"
+        },
+        "id": {
+            "$numberDouble": "20013.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/tea (3).jpg"
+            }
+        ],
+        "title": "立顿斯里兰卡红茶2g*25包",
+        "price": {
+            "$numberDouble": "19.9"
+        },
+        "price_off": null,
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10110.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "茶饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be44"
+        },
+        "id": {
+            "$numberDouble": "20014.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/tea (4).jpg"
+            }
+        ],
+        "title": "农夫山泉东方树叶茉莉花茶500ml*15瓶*2箱",
+        "price": {
+            "$numberDouble": "102.0"
+        },
+        "price_off": null,
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10110.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "94.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "茶饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be45"
+        },
+        "id": {
+            "$numberDouble": "20015.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/tea (5).jpg"
+            }
+        ],
+        "title": "立顿Lipton乌龙茶袋泡茶包1.8g*25",
+        "price": {
+            "$numberDouble": "19.9"
+        },
+        "price_off": null,
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10110.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "茶饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be46"
+        },
+        "id": {
+            "$numberDouble": "20016.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/coffee (1).jpg"
+            }
+        ],
+        "title": "【整箱】雀巢 丝滑拿铁 咖啡饮料 268ml*15瓶",
+        "price": {
+            "$numberDouble": "74.9"
+        },
+        "price_off": null,
+        "desc": "口感丝般柔滑 香气层次丰富",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "咖啡"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be47"
+        },
+        "id": {
+            "$numberDouble": "20017.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/coffee (2).jpg"
+            }
+        ],
+        "title": "中原G7美式萃取速溶纯黑咖啡30g",
+        "price": {
+            "$numberDouble": "19.9"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "咖啡"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be48"
+        },
+        "id": {
+            "$numberDouble": "20018.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/coffee (3).jpg"
+            }
+        ],
+        "title": "雀巢醇品速溶黑咖啡1.8g*20包（新老包装随机发）",
+        "price": {
+            "$numberDouble": "21.9"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "咖啡"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be49"
+        },
+        "id": {
+            "$numberDouble": "20019.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/coffee (4).jpg"
+            }
+        ],
+        "title": "雀巢咖啡伴侣植脂末奶精粉瓶装100g",
+        "price": {
+            "$numberDouble": "17.9"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "咖啡"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be4a"
+        },
+        "id": {
+            "$numberDouble": "20020.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/coffee (5).jpg"
+            }
+        ],
+        "title": "雀巢咖啡1+2原味微研磨100条*15g",
+        "price": {
+            "$numberDouble": "97.9"
+        },
+        "price_off": null,
+        "desc": "原味 香气纯正",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "咖啡"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be4b"
+        },
+        "id": {
+            "$numberDouble": "20022.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/juice (2).jpg"
+            }
+        ],
+        "title": "依能 陈皮闪照饮料350ml*6瓶 整箱果汁复合味饮料",
+        "price": {
+            "$numberDouble": "19.0"
+        },
+        "price_off": null,
+        "desc": "告别单调 鲜活起来",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "99.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "果汁"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be4c"
+        },
+        "id": {
+            "$numberDouble": "20023.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/juice (3).jpg"
+            }
+        ],
+        "title": "Zico椰子水330ml*12整箱",
+        "price": {
+            "$numberDouble": "108.0"
+        },
+        "price_off": null,
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10121.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "39.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "果汁"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be4d"
+        },
+        "id": {
+            "$numberDouble": "20025.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/juice (5).jpg"
+            }
+        ],
+        "title": "九龙斋 老北京酸梅汤 饮料400ml*24瓶",
+        "price": {
+            "$numberDouble": "94.9"
+        },
+        "price_off": null,
+        "desc": "古法熬制",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "29.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "果汁"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be4e"
+        },
+        "id": {
+            "$numberDouble": "20026.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/gnyl (1).jpg"
+            }
+        ],
+        "title": "红牛安奈吉狗能饮料250ml*24罐整箱",
+        "price": {
+            "$numberDouble": "135.0"
+        },
+        "price_off": null,
+        "desc": "唤醒能量",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "49.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "功能饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be4f"
+        },
+        "id": {
+            "$numberDouble": "20027.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/gnyl (2).jpg"
+            }
+        ],
+        "title": "江中食疗 越光米稀养胃代餐瓶400ml*10瓶健康饮料",
+        "price": {
+            "$numberDouble": "70.0"
+        },
+        "price_off": null,
+        "desc": "备餐养胃 石磨研磨 四臣汤",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10121.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "69.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "功能饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be50"
+        },
+        "id": {
+            "$numberDouble": "20029.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/gnyl (4).jpg"
+            }
+        ],
+        "title": "江中食疗 健消轻饮解腻健胃消食瓶装400ml*10瓶健康饮料",
+        "price": {
+            "$numberDouble": "70.0"
+        },
+        "price_off": null,
+        "desc": "解油腻 解辣 不怕多吃",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10120.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "89.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "功能饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be51"
+        },
+        "id": {
+            "$numberDouble": "20030.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/gnyl (5).jpg"
+            }
+        ],
+        "title": "东鹏特饮 维生素功能饮料250ml*24瓶整箱",
+        "price": {
+            "$numberDouble": "53.9"
+        },
+        "price_off": null,
+        "desc": "年轻就要醒着拼",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10320.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "84.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "功能饮料"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be52"
+        },
+        "id": {
+            "$numberDouble": "20031.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/beer (1).jpg"
+            }
+        ],
+        "title": "雪花啤酒纯生8度 330ml*24听",
+        "price": {
+            "$numberDouble": "69.0"
+        },
+        "price_off": null,
+        "desc": "匠心营造",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11320.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "74.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "啤酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be53"
+        },
+        "id": {
+            "$numberDouble": "20032.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/beer (2).jpg"
+            }
+        ],
+        "title": "德国进口精酿卡布奇纳小麦窖藏啤酒500ml*6",
+        "price": {
+            "$numberDouble": "168.0"
+        },
+        "price_off": null,
+        "desc": "砰砰瓶设计 德国精酿 窖藏醇香",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11320.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "84.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "啤酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be54"
+        },
+        "id": {
+            "$numberDouble": "20033.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/beer (3).jpg"
+            }
+        ],
+        "title": "雪花啤酒8度清爽 500ml*12厅",
+        "price": {
+            "$numberDouble": "45.0"
+        },
+        "price_off": null,
+        "desc": "清香品质 清爽享受",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10320.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "84.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "啤酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be55"
+        },
+        "id": {
+            "$numberDouble": "20034.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/beer (4).jpg"
+            }
+        ],
+        "title": "德国原装进口冰顶瓶装小麦白啤酒500ml*6瓶装",
+        "price": {
+            "$numberDouble": "99.0"
+        },
+        "price_off": null,
+        "desc": "德式白啤清香爽口",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10322.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "89.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "啤酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be56"
+        },
+        "id": {
+            "$numberDouble": "20035.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/beer (5).jpg"
+            }
+        ],
+        "title": "【瓶装整箱】乌苏啤酒 620*12瓶",
+        "price": {
+            "$numberDouble": "94.9"
+        },
+        "price_off": null,
+        "desc": "天山雪水酿就 网红好酒",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "10321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "86.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "啤酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be57"
+        },
+        "id": {
+            "$numberDouble": "20036.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/liqour (1).jpg"
+            }
+        ],
+        "title": "牛栏山 陈酿 (白瓶) 42°C 500ml * 12 瓶",
+        "price": {
+            "$numberDouble": "158.0"
+        },
+        "price_off": null,
+        "desc": "牛气冲天适合送礼小酌",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "83.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "白酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be58"
+        },
+        "id": {
+            "$numberInt": "20037"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/liqour (2).jpg",
+                "uid": {
+                    "$numberInt": "0"
+                },
+                "status": "done"
+            },
+            {
+                "url": "http://duyi-bucket.oss-cn-beijing.aliyuncs.com/mall-admin/images/liqour%20(3)1593421178184.jpg",
+                "uid": {
+                    "$numberInt": "1"
+                },
+                "name": "liqour (3).jpg",
+                "status": "done"
+            }
+        ],
+        "title": "泸州老窖鉴藏装52度白酒500ml*6瓶",
+        "price": {
+            "$numberInt": "158"
+        },
+        "price_off": {
+            "$numberInt": "158"
+        },
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "83.0"
+        },
+        "category": {
+            "$numberInt": "1"
+        },
+        "inventory": {
+            "$numberInt": "100"
+        },
+        "name": "白酒",
+        "number": "00002",
+        "status": {
+            "$numberInt": "1"
+        },
+        "unit": "g",
+        "c_item": "白酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be59"
+        },
+        "id": {
+            "$numberDouble": "20038.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/liqour (3).jpg"
+            }
+        ],
+        "title": "古越龙山绍兴黄酒500ml*6瓶",
+        "price": {
+            "$numberDouble": "61.9"
+        },
+        "price_off": null,
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11311.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "84.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "白酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be5a"
+        },
+        "id": {
+            "$numberDouble": "20039.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/liqour (4).jpg"
+            }
+        ],
+        "title": "茅台王子酒酱香进店53度白酒500ml*6",
+        "price": {
+            "$numberDouble": "2808.0"
+        },
+        "price_off": null,
+        "desc": "海量好货次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "100.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "白酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be5b"
+        },
+        "id": {
+            "$numberDouble": "20040.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/liqour (5).jpg"
+            }
+        ],
+        "title": "75度白酒 扳倒井老战友500ml单瓶装高度白酒",
+        "price": {
+            "$numberDouble": "22.9"
+        },
+        "price_off": null,
+        "desc": "浓香型",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "83.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "白酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be5c"
+        },
+        "id": {
+            "$numberDouble": "20041.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/wine (1).jpg"
+            }
+        ],
+        "title": "小小诗慕斯卡托桃红起泡葡萄酒750ml",
+        "price": {
+            "$numberDouble": "33.9"
+        },
+        "price_off": null,
+        "desc": "讨喜的桃红色 口感柔和清甜",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "12321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "86.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "葡萄酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be5d"
+        },
+        "id": {
+            "$numberDouble": "20042.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/wine (2).jpg"
+            }
+        ],
+        "title": "长城特选五年橡木桶解百纳干红葡萄酒750ml*6瓶",
+        "price": {
+            "$numberDouble": "599.0"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "13321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "89.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "葡萄酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be5e"
+        },
+        "id": {
+            "$numberDouble": "20043.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/wine (3).jpg"
+            }
+        ],
+        "title": "洛神山庄设拉子赤霞珠红葡萄酒",
+        "price": {
+            "$numberDouble": "39.9"
+        },
+        "price_off": null,
+        "desc": "一杯美酒足以打动你羞涩的味蕾 让品味绽放",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "14321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "93.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "葡萄酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be5f"
+        },
+        "id": {
+            "$numberDouble": "20044.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/wine (4).jpg"
+            }
+        ],
+        "title": "法国进口 罗纳河龙船珍藏干红葡萄酒两支装赠酒具750ml*2",
+        "price": {
+            "$numberDouble": "158.0"
+        },
+        "price_off": null,
+        "desc": "口感醇厚 果香浓郁 法国干红",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "11361.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "93.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "葡萄酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be60"
+        },
+        "id": {
+            "$numberDouble": "20045.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/wine (5).jpg"
+            }
+        ],
+        "title": "法国进口圣班瑞干红葡萄酒两瓶装（送礼袋送酒刀）",
+        "price": {
+            "$numberDouble": "49.9"
+        },
+        "price_off": null,
+        "desc": "原瓶进口 品质选择",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "73.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "葡萄酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be61"
+        },
+        "id": {
+            "$numberDouble": "20046.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yangJ (1).jpg"
+            }
+        ],
+        "title": "加白的白朗姆酒750ml",
+        "price": {
+            "$numberDouble": "69.0"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "73.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "洋酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be62"
+        },
+        "id": {
+            "$numberDouble": "20047.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yangJ (2).jpg"
+            }
+        ],
+        "title": "格兰菲迪12年威士忌（单一发芽）700ml",
+        "price": {
+            "$numberDouble": "299.0"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "1321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "93.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "洋酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be63"
+        },
+        "id": {
+            "$numberDouble": "20048.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yangJ (3).jpg"
+            }
+        ],
+        "title": "RIO锐澳微醺3度鸡尾酒330ml*8罐组合装",
+        "price": {
+            "$numberDouble": "52.0"
+        },
+        "price_off": null,
+        "desc": "一个人的小酒 3度微醺的小酒感 细腻轻柔的芬芳",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "621.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "83.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "洋酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be64"
+        },
+        "id": {
+            "$numberDouble": "20049.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/yangJ (4).jpg"
+            }
+        ],
+        "title": "芝华士12年苏格兰威士忌潮流装1000ml",
+        "price": {
+            "$numberDouble": "258.0"
+        },
+        "price_off": null,
+        "desc": "海量好货 次日送达",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "1121.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "73.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "洋酒"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be65"
+        },
+        "id": {
+            "$numberDouble": "20051.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/grain (1).jpg"
+            }
+        ],
+        "title": "序木堂金丝皇菊20g*1罐",
+        "price": {
+            "$numberDouble": "11.9"
+        },
+        "price_off": null,
+        "desc": "冲泡出来一大朵",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "321.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "73.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "谷物冲调"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be66"
+        },
+        "id": {
+            "$numberDouble": "20052.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/grain (3).jpg"
+            }
+        ],
+        "title": "福事多枣花蜂蜜500g/瓶",
+        "price": {
+            "$numberDouble": "17.9"
+        },
+        "price_off": null,
+        "desc": "严格把控每一道工序",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "322.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "74.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "谷物冲调"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be67"
+        },
+        "id": {
+            "$numberDouble": "20053.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/grain (4).jpg"
+            }
+        ],
+        "title": "西麦 燕麦片（480g赠80g）",
+        "price": {
+            "$numberDouble": "15.8"
+        },
+        "price_off": null,
+        "desc": "全家人的健康选择",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "323.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "75.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "谷物冲调"
+    },
+    {
+        "_id": {
+            "$oid": "5ef9879fe80c18c612b3be68"
+        },
+        "id": {
+            "$numberDouble": "20054.0"
+        },
+        "images": [
+            {
+                "url": "https://duyi-bucket.oss-cn-beijing.aliyuncs.com/img/grain (5).jpg"
+            }
+        ],
+        "title": "买一送一实发2袋杯口留香酸奶果粒燕麦片400g/袋",
+        "price": {
+            "$numberDouble": "28.9"
+        },
+        "price_off": null,
+        "desc": "即食代餐 低温烘焙",
+        "tags": [
+            "包邮，最快次日达"
+        ],
+        "sale": {
+            "$numberDouble": "326.0"
+        },
+        "comprehensive": {
+            "$numberDouble": "76.0"
+        },
+        "category": {
+            "$numberDouble": "1.0"
+        },
+        "inventory": {
+            "$numberDouble": "100.0"
+        },
+        "c_item": "谷物冲调"
+    }
+]

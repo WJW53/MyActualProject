@@ -1,0 +1,10 @@
+[{"_id":{"$oid":"5eddb8169840937c98f93bfc"},"id":{"$numberInt":"1090"},"name":"时令果蔬","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb84599f99e7cd4867716"},"id":{"$numberInt":"1091"},"name":"安心乳品","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb85399f99e7cd4867717"},"id":{"$numberInt":"1092"},"name":"休闲零食","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb86599f99e7cd4867718"},"id":{"$numberInt":"1093"},"name":"新鲜蔬菜","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb87599f99e7cd4867719"},"id":{"$numberInt":"1094"},"name":"安心乳品","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb88299f99e7cd486771a"},"id":{"$numberInt":"1095"},"name":"肉蛋食材","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb89299f99e7cd486771b"},"id":{"$numberInt":"1096"},"name":"新鲜水产","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5eddb8a099f99e7cd486771c"},"id":{"$numberInt":"1097"},"name":"粮油调味","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5ef80b11330f950648ae282a"},"id":{"$numberInt":"1098"},"name":"其他类别","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5ef830e3330f950648ae282b"},"id":{"$numberInt":"1099"},"name":"酒水冲调","__v":{"$numberInt":"0"}}]

@@ -1,0 +1,3 @@
+[{"_id":"category_id","sequence_value":{"$numberInt":"4"},"__v":{"$numberInt":"0"}},
+{"_id":"product_id","sequence_value":{"$numberDouble":"30000.0"},"__v":{"$numberInt":"0"}},
+{"_id":"tag_id","sequence_value":{"$numberInt":"12"},"__v":{"$numberInt":"0"}}]

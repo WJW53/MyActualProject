@@ -1,0 +1,5 @@
+[{"_id":{"$oid":"5ef84a43e3fde903ad20a6f0"},"id":{"$numberInt":"1"},"name":"酒水冲调","__v":{"$numberInt":"0"},"c_items":["饮用水","碳酸饮料","咖啡","茶饮料","果汁","功能饮料","啤酒","白酒","洋酒","葡萄酒","谷物冲调"]},
+{"_id":{"$oid":"5ef84a50e3fde903ad20a6f1"},"id":{"$numberInt":"2"},"name":"时令水果","__v":{"$numberInt":"0"},"c_items":["苹果","香梨","榴莲","柚子","西瓜","车厘子","百香果","牛油果","奇异果","甜瓜蜜瓜","草莓蓝莓","香蕉葡萄"]},
+{"_id":{"$oid":"5ef84aa3e3fde903ad20a6f2"},"id":{"$numberInt":"3"},"name":"安心乳品","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5ef84ac2e3fde903ad20a6f3"},"id":{"$numberInt":"4"},"name":"休闲零食","__v":{"$numberInt":"0"}},
+{"_id":{"$oid":"5ef84ad1e3fde903ad20a6f4"},"id":{"$numberInt":"5"},"name":"新鲜蔬菜","__v":{"$numberInt":"0"}}]
