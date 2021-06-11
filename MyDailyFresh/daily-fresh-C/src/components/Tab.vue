@@ -163,7 +163,7 @@ export default {
     overflow-y: visible;
     .tab-item {
       flex-shrink: 0;
-      width: 50px;
+      width: 55px;
       padding: 10px 5px;
       text-align: center;
       .img-box {
